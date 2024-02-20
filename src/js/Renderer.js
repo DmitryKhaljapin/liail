@@ -29,9 +29,4 @@ export class Renderer {
 
         Renderer.#render(list, 'app');
     }
-
-    static test() {
-        const p = Renderer.#createHTMLElement('p', [Renderer.#createHTMLElement('span', ['this is span with text'])])
-        Renderer.#render(p, 'app');
-    }
 }
