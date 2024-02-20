@@ -1,5 +1,9 @@
+import { defaultData } from '../assets/defaultData.js';
+
 export class DataGetter {
     static async #getDataFromServer(apiUrl) {
+        if (!apiUrl) return JSON.parse(defaultData);
+
         const response = await fetch(apiUrl);
         if (response.ok) {
             return await response.json();
