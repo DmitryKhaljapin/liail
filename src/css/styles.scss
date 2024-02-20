@@ -1,0 +1,16 @@
+@import './reset.scss';
+@import './fonts.scss';
+
+body {
+    font-family: 'Garamond';
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+        li {
+            margin: 10px 0 10px 20px;
+        }
+}
